@@ -39,6 +39,9 @@ module.exports = {
         primary: colors.blue,
         gray: colors.neutral,
         maroon: '#b32347',
+        yellow: '#ffc413',
+        dblue: '#005ada',
+        lblue: '#02aeff',
       },
       typography: (theme) => ({
         DEFAULT: {

@@ -21,9 +21,7 @@ const Map = () => (
         rotate: [89, -39.69, 0],
         scale: 6100}}
 
-       >
-           
-     
+       >     
           <Geographies   stroke="#EAEAEC" geography={geoUrl}>
             {({ geographies }) =>
               geographies.map(geo => (

@@ -7,9 +7,10 @@ import { aq, op, table, loadCSV, FileAttachment } from 'arquero';
 import React, { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import _ from "lodash";
-import Select from '@/components/Select'  ;
+import Select from '@/components/BondSelect'  ;
 import VizHeader from '@/components/VizHeader.js'
 import MyToggle from '@/components/toggle';
+import BondStat from '@/components/BondStat'
 
 const FirstBar = dynamic(
     () => import('@/components/charts/bar'),
@@ -83,31 +84,11 @@ export default function Home({ posts }) {
     ]
 
     const people = [
-      { id: 'Statewide', name: 'Statewide' },
-      { id: 'Cook', name: 'Cook' },
-      { id: '1', name: 'Circuit 1' },
-      { id: '2', name: 'Circuit 2' },
-      { id: '3', name: 'Circuit 3' },
-      { id: '4', name: 'Circuit 4' },
-      { id: '5', name: 'Circuit 5' },
-      { id: '6', name: 'Circuit 6' },
-      { id: '7', name: 'Circuit 7' },
-      { id: '8', name: 'Circuit 8' },
-      { id: '9', name: 'Circuit 9' },
-      { id: '10', name: 'Circuit 10' },
-      { id: '11', name: 'Circuit 11' },
-      { id: '12', name: 'Circuit 12' },
-      { id: '13', name: 'Circuit 13' },
-      { id: '14', name: 'Circuit 14' },
-      { id: '15', name: 'Circuit 15' },
-      { id: '16', name: 'Circuit 16' },
-      { id: '17', name: 'Circuit 17' },
-      { id: '18', name: 'Circuit 18' },
-      { id: '19', name: 'Circuit 19' },
-      { id: '20', name: 'Circuit 20' },
-      { id: '21', name: 'Circuit 21' },
-      { id: '22', name: 'Circuit 22' },
-      { id: '23', name: 'Circuit 23' }
+      { id: '1', name: 'All Offense Types' },
+      { id: '2', name: 'Detainable - Public Safety' },
+      { id: '3', name: 'Detainable - Willful Flight' },
+      { id: '4', name: 'Non-Detainable' },
+  
     ]
 
 
@@ -183,11 +164,18 @@ export default function Home({ posts }) {
 
         <div className='h-32 p-4 mt-10  bg-white'>
           <div className='flex flex-row gap-1 sm:gap-2'>
-          <h3 className='text-xl mt-3 font-extrabold'>Select Detainable Arrests:</h3>
+          <h3 className='text-xl mt-3 font-extrabold'>Select Offense Type:</h3>
       <Select  selected={selected} setSelected={setSelected} people={people} />
       </div>
+
+
       </div>
-      <div className="mb-4"></div>
+
+          <hr className='max-w-sm  mt-4'></hr>
+    
+      <BondStat />
+
+
 
       <div  style={{height:"80px", width:"140px"}} className="ml-2"> 
                             
@@ -218,11 +206,11 @@ export default function Home({ posts }) {
       <MyToggle enabled={enabled} setEnabled={setEnabled} />
       {enabled ? <FirstBar className="z-0" data={jsonAnn} keyArray={['Detainable - Public Safety %','Detainable - Willful Flight %','Non-detainable %']} valueFormatString={ " >-0.1~%"}
            indexArray={"Year"} marginObject={{ top: 0, right: 0, bottom: 15, left: 0 }}
-           layoutVal={"vertical"}
+           layoutVal={"horizontal"}
            colorArray={['#ffc413','#02aeff','#212121']}
             /> :  <FirstBar className="z-0" data={jsonAnn} keyArray={['Detainable - Public Safety','Detainable - Willful Flight','Non-detainable']} valueFormatString={">-,"}
             indexArray={"Year"} marginObject={{ top: 0, right: 0, bottom: 15, left:0 }}
-            layoutVal={"vertical"}
+            layoutVal={"horizontal"}
             colorArray={['#ffc413','#02aeff','#212121']}
              /> }
           </span>

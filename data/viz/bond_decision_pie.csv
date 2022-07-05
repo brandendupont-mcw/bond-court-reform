@@ -1,0 +1,18 @@
+Bail Type,% of Total Bail,offense_type
+No Bail,2.63%,All Offense Types
+C/D-Bond,37.38%,All Offense Types
+I-Bond,59.99%,All Offense Types
+C/D-Bond,45.27%,Detainable - Willful Flight
+I-Bond,51.57%,Detainable - Willful Flight
+No Bail,3.16%,Detainable - Willful Flight
+C/D-Bond,60.45%,Detainable - Public Safety
+I-Bond,34.67%,Detainable - Public Safety
+No Bail,4.89%,Detainable - Public Safety
+Non-Detainable,C/D-Bond,14.41%
+Non-Detainable,I-Bond,85.12%
+Non-Detainable,No Bail,0.47%
+,,
+,,
+,,
+,,
+,,
