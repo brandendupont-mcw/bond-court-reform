@@ -140,10 +140,10 @@ export default function Home({ posts }) {
     //const testData = users.filter(d => d.Circuit === circuitVal );
 
     const jsonTestAsync = JSON.parse(JSON.stringify(riskData));
-    const jsonPie = JSON.parse(JSON.stringify(pieData));
+    const newjsonPie = JSON.parse(JSON.stringify(pieData));
     const jsonAnn = JSON.parse(JSON.stringify(annData));
 
-    console.log( jsonPie)
+    console.log(newjsonPie)
 
 
 
@@ -191,12 +191,12 @@ export default function Home({ posts }) {
 
           {/* PIE SECTION  */}
 
-          <aside class="relative overflow-hidden bg-gray-50 lg:flex">
-  <div class="w-full p-12 text-center lg:w-1/2 sm:p-16 lg:p-24 lg:text-left">
-    <div class="max-w-xl mx-auto lg:ml-0">
+          <aside class="bg-gray-50 lg:flex h-auto overflow-hidden">
+  <div class="w-sm text-center lg:text-left">
+    <div class="max-w-xl mx-auto lg:ml-0 p-24">
 
 
-      <p class="mt-2 text-2xl font-bold text-black sm:text-2xl">
+      <p class="mt-2 text-2xl font-bold text-black sm:text-2xl ">
         <span className='text-dblue'>{selected['name']}</span> <br></br>Compared to 2021 Bond Decisions in Cook
       </p>
 
@@ -211,8 +211,11 @@ export default function Home({ posts }) {
     </div>
   </div>
 
-  <div class="relative w-full h-64 sm:h-96 lg:w-1/2 lg:h-auto">
-    
+  <div class="  w-[500px] h-[400px]  ">
+
+   
+   <FirstPie data={newjsonPie}  />
+
 
   </div>
           </aside>
@@ -224,8 +227,8 @@ export default function Home({ posts }) {
     
             
       <span className=' w-[650px] h-[300px]  z-index-0 mb-10 '>
-      <div className="text-lg leading-7 text-gray-700 ml-[260px] mb-2">Detainable Arrests by Offense</div>
-      <FirstPie data={jsonPie}  />
+   
+      <FirstPie data={newjsonPie}  />
           </span>
 
       </div>
