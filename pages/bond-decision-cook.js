@@ -191,16 +191,16 @@ export default function Home({ posts }) {
 
           {/* PIE SECTION  */}
 
-          <aside class="bg-gray-50 lg:flex h-auto overflow-hidden pb-4">
-  <div class="w-sm text-center lg:text-left">
-    <div class="max-w-xl mx-auto lg:ml-0 p-24">
+          <aside  className="bg-gray-50 lg:flex h-auto overflow-hidden pb-4">
+  <div  className="w-sm text-center lg:text-left">
+    <div  className="max-w-xl mx-auto lg:ml-0 p-24">
 
 
-      <p class="mt-2 text-2xl font-bold text-black sm:text-2xl ">
+      <p  className="mt-2 text-2xl font-bold text-black sm:text-2xl ">
         <span className='text-dblue'>{selected['name']}</span> <br></br>Compared to 2021 Bond Decisions in Cook
       </p>
 
-      <p class=" lg:mt-4 lg:block text-sm">
+      <p  className=" lg:mt-4 lg:block text-sm">
       Under the PFA, there are only two groups of individuals who are initially detainable: 1) those eligible for detention based on a “public safety” standard, and 2) those eligible for detention based on a “willful flight” standard.
       Explore how this law compares to existing 2021 Cook Bond Decisions.
       </p>
@@ -209,7 +209,7 @@ export default function Home({ posts }) {
     </div>
   </div>
 
-  <div class="  w-[500px] h-[400px]  ">
+  <div  className="  w-[500px] h-[400px]  ">
 
    
    <FirstPie data={newjsonPie}  />
