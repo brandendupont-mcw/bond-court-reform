@@ -228,19 +228,6 @@ export default function Home({ posts }) {
       <FirstPie data={jsonPie}  />
           </span>
 
-          <span className='ml-40 w-[300px] h-[250px] z-index-0 mb-0'>
-      <div className="text-lg leading-7 text-gray-700 mb-4">Annual Number of Arrests</div>
-      <MyToggle enabled={enabled} setEnabled={setEnabled} />
-      {enabled ? <FirstBar className="z-0" data={jsonAnn} keyArray={['Detainable - Public Safety %','Detainable - Willful Flight %','Non-detainable %']} valueFormatString={ " >-0.1~%"}
-           indexArray={"Year"} marginObject={{ top: 0, right: 0, bottom: 15, left: 0 }}
-           layoutVal={"horizontal"}
-           colorArray={['#ffc413','#02aeff','#212121']}
-            /> :  <FirstBar className="z-0" data={jsonAnn} keyArray={['Detainable - Public Safety','Detainable - Willful Flight','Non-detainable']} valueFormatString={">-,"}
-            indexArray={"Year"} marginObject={{ top: 0, right: 0, bottom: 15, left:0 }}
-            layoutVal={"horizontal"}
-            colorArray={['#ffc413','#02aeff','#212121']}
-             /> }
-          </span>
       </div>
 
       <hr className=' mb-6 mt-4'></hr>
