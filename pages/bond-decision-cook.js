@@ -8,7 +8,7 @@ import React, { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import _ from "lodash";
 import Select from '@/components/BondSelect'  ;
-import VizHeader from '@/components/VizHeader.js'
+import VizHeader from '@/components/BondVizHeader.js'
 import MyToggle from '@/components/toggle';
 import BondStat from '@/components/BondStat'
 
@@ -191,7 +191,7 @@ export default function Home({ posts }) {
 
           {/* PIE SECTION  */}
 
-          <aside class="bg-gray-50 lg:flex h-auto overflow-hidden">
+          <aside class="bg-gray-50 lg:flex h-auto overflow-hidden pb-4">
   <div class="w-sm text-center lg:text-left">
     <div class="max-w-xl mx-auto lg:ml-0 p-24">
 
@@ -200,11 +200,9 @@ export default function Home({ posts }) {
         <span className='text-dblue'>{selected['name']}</span> <br></br>Compared to 2021 Bond Decisions in Cook
       </p>
 
-      <p class="hidden lg:mt-4 lg:block">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas
-        tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et
-        fermentum, augue. Aliquet amet volutpat quisque ut interdum tincidunt
-        duis.
+      <p class=" lg:mt-4 lg:block text-sm">
+      Under the PFA, there are only two groups of individuals who are initially detainable: 1) those eligible for detention based on a “public safety” standard, and 2) those eligible for detention based on a “willful flight” standard.
+      Explore how this law compares to existing 2021 Cook Bond Decisions.
       </p>
 
 
@@ -222,16 +220,7 @@ export default function Home({ posts }) {
 
               {/*  PIE SECTION   */}
 
-      <div className='grid gap-10 grid-cols-2'>
-            
-    
-            
-      <span className=' w-[650px] h-[300px]  z-index-0 mb-10 '>
-   
-      <FirstPie data={newjsonPie}  />
-          </span>
 
-      </div>
 
       <hr className=' mb-6 mt-4'></hr>
                     

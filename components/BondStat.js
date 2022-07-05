@@ -2,7 +2,7 @@ const Statistic = ({totalCases,moneySaved, bondSaved,offenseName}) => {
     return (
 
 
-<section className="bg-white mb-8">
+<section className="bg-white mb-0">
 <div className="max-w-screen-xl px-4 mx-auto  sm:px-6 lg:px-8">
 
 
