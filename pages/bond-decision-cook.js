@@ -103,11 +103,7 @@ export default function Home({ posts }) {
     const [enabled, setEnabled] = useState(false);
 
 
-    const data = table({
-        country: ['USA', 'USA', 'Canada', 'Canada'],
-        medal: ['gold', 'silver', 'gold', 'silver'],
-        count: [10, 20, 7, 26]
-      })
+
 
 
       useEffect(() => {
@@ -116,13 +112,14 @@ export default function Home({ posts }) {
           const pie = await loadCSV('https://raw.githubusercontent.com/brandendupont-mcw/bond-court-reform/master/data/viz/bond_decision_pie.csv');
           const ann = await loadCSV('https://raw.githubusercontent.com/brandendupont-mcw/bond-court-reform/master/data/viz/bail_decisions_top_10.csv');
 
-          
+
           // eslint-disable-line
-          const testData = users.params({ threshold: selected['id'] }).filter(d => d.Circuit === threshold ); 
-          const filterPie = pie.params({ threshold: selected['id'] }).filter(d => d.Circuit === threshold ); 
-          const filterAnn = ann.params({ threshold: selected['id'] }).filter(d => d.Circuit === threshold ); 
+          const testData = users.params({ threshold: selected['name'] }).filter(d => d.offense_type === threshold ); 
+          const filterPie = pie.params({ threshold: selected['name'] }).filter(d => d.offense_type === threshold ); 
+          const filterAnn = ann.params({ threshold: selected['name'] }).filter(d => d.offense_type === threshold ); 
           // risk data
-          
+
+
 
           setRiskData(testData.objects());
           setPieData(filterPie.objects());
@@ -146,12 +143,15 @@ export default function Home({ posts }) {
     const jsonPie = JSON.parse(JSON.stringify(pieData));
     const jsonAnn = JSON.parse(JSON.stringify(annData));
 
+    console.log( jsonPie)
+
+
 
 
   const percVal = ['Detainable - Public Safety %','Detainable - Willful Flight %','Non-detainable %']
 
 
-      console.log(selected['id'])
+  
 
 
 
@@ -160,10 +160,11 @@ export default function Home({ posts }) {
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
       <VizHeader />
 
+      <div className='p-4'></div>
       
 
-        <div className='h-32 p-4 mt-10  bg-white'>
-          <div className='flex flex-row gap-1 sm:gap-2'>
+        <div className='h-32 ml-4  bg-transparent sticky top-0'>
+          <div className='flex flex-row gap-1 sm:gap-2 bg-white'>
           <h3 className='text-xl mt-3 font-extrabold'>Select Offense Type:</h3>
       <Select  selected={selected} setSelected={setSelected} people={people} />
       </div>
@@ -171,27 +172,53 @@ export default function Home({ posts }) {
 
       </div>
 
-          <hr className='max-w-sm  mt-4'></hr>
+ 
     
-      <BondStat />
+      <BondStat 
+      totalCases={riskData[0]["Total Cases"]?.toLocaleString()}
+      moneySaved={riskData[0]["Total Bail Costs Avoided-M"]}
+      bondSaved={riskData[0]["Average Bond Amount"]?.toLocaleString()}
+      offenseName={selected['name']}
+       />
 
 
 
-      <div  style={{height:"80px", width:"140px"}} className="ml-2"> 
-                            
-                            <div className="pt-2"></div>
-                                              </div>
 
-                                                    <div className="mb-4 ">
-                                                      <span className='flex flew-row gap-1'>
-          <h1 className="text-2xl font-extrabold  tracking-tight text-gray-900 dark:text-gray-100 sm:leading-10 md:text-2xl md:leading-14">
-          Detainable Arrests for <span className='border-b-2 border-maroon'>{selected['name']}</span> 
-          </h1>
-          </span>
-          <hr className='max-w-sm mb-6 mt-4'></hr>
-          </div>
+
+ 
+          
          
+
+          {/* PIE SECTION  */}
+
+          <aside class="relative overflow-hidden bg-gray-50 lg:flex">
+  <div class="w-full p-12 text-center lg:w-1/2 sm:p-16 lg:p-24 lg:text-left">
+    <div class="max-w-xl mx-auto lg:ml-0">
+
+
+      <p class="mt-2 text-2xl font-bold text-black sm:text-2xl">
+        <span className='text-dblue'>{selected['name']}</span> <br></br>Compared to 2021 Bond Decisions in Cook
+      </p>
+
+      <p class="hidden lg:mt-4 lg:block">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas
+        tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et
+        fermentum, augue. Aliquet amet volutpat quisque ut interdum tincidunt
+        duis.
+      </p>
+
+
+    </div>
+  </div>
+
+  <div class="relative w-full h-64 sm:h-96 lg:w-1/2 lg:h-auto">
     
+
+  </div>
+          </aside>
+
+              {/*  PIE SECTION   */}
+
       <div className='grid gap-10 grid-cols-2'>
             
     

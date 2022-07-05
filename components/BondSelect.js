@@ -47,12 +47,12 @@ function Select({selected, setSelected, people}) {
 
   return (
 
-    <div className=" z-10 w-50">
+    <div className=" z-10 w-50 ">
       <Combobox value={selected} onChange={setSelected} >
         <div className="relative mt-1">
-          <div className="relative w-full cursor-default overscroll-none    bg-white text-left border-black border-b-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2  sm:text-sm">
+          <div className="relative w-full cursor-default    bg-transparent text-left border-black border-b-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2  sm:text-sm">
             <Combobox.Input
-              className="w-full border-none hover:border-b-2  sm:text-xl text-lg text-dblue font-extrabold  text-gray-900 focus:ring-0"
+              className="w-full border-none hover:border-b-2  sm:text-xl text-lg text-dblue font-extrabold bg-transparent text-gray-900 focus:ring-0"
               displayValue={(person) => person.name}
               onChange={(event) => setQuery(event.target.value)}
               horizontal

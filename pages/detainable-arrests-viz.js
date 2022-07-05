@@ -165,6 +165,7 @@ export default function Home({ posts }) {
     const jsonPie = JSON.parse(JSON.stringify(pieData));
     const jsonAnn = JSON.parse(JSON.stringify(annData));
 
+    console.log(jsonPie)
 
 
   const percVal = ['Detainable - Public Safety %','Detainable - Willful Flight %','Non-detainable %']
