@@ -1,25 +1,25 @@
-Offense,Bail Type,Bail Type 2,% of Total Bail Type 2,
-Domestic battery,I-Bond,"4,291",56.83%,All Offense Types
-Aggravated unlawful use of a weapon,C/D-Bond,"4,232",75.60%,All Offense Types
-Domestic battery,C/D-Bond,"3,222",42.67%,All Offense Types
-Battery,I-Bond,"2,878",89.99%,All Offense Types
-Retail theft,I-Bond,"1,871",82.24%,All Offense Types
-Manufacture/delivery of a controlled substance,I-Bond,"1,683",75.40%,All Offense Types
-Possession of a controlled substance,I-Bond,"1,594",79.34%,All Offense Types
-Criminal damage to property,I-Bond,"1,401",84.09%,All Offense Types
-Aggravated unlawful use of a weapon,I-Bond,"1,287",22.99%,All Offense Types
+Offense,Bail Type,Bail Type 2,% of Total Bail Type 2,offense_type
+Domestic battery,I-Bond,4291,56.83%,All Offense Types
+Aggravated unlawful use of a weapon,C/D-Bond,4232,75.60%,All Offense Types
+Domestic battery,C/D-Bond,3222,42.67%,All Offense Types
+Battery,I-Bond,2878,89.99%,All Offense Types
+Retail theft,I-Bond,1871,82.24%,All Offense Types
+Manufacture/delivery of a controlled substance,I-Bond,1683,75.40%,All Offense Types
+Possession of a controlled substance,I-Bond,1594,79.34%,All Offense Types
+Criminal damage to property,I-Bond,1401,84.09%,All Offense Types
+Aggravated unlawful use of a weapon,I-Bond,1287,22.99%,All Offense Types
 Criminal trespass to real property,I-Bond,950,91.43%,All Offense Types
-Domestic battery,I-Bond,"4,291",56.83%,Detainable - Public Safety
-Aggravated unlawful use of a weapon,C/D-Bond,"4,232",75.60%,Detainable - Public Safety
-Domestic battery,C/D-Bond,"3,222",42.67%,Detainable - Public Safety
-Aggravated unlawful use of a weapon,I-Bond,"1,287",22.99%,Detainable - Public Safety
+Domestic battery,I-Bond,4291,56.83%,Detainable - Public Safety
+Aggravated unlawful use of a weapon,C/D-Bond,4232,75.60%,Detainable - Public Safety
+Domestic battery,C/D-Bond,3222,42.67%,Detainable - Public Safety
+Aggravated unlawful use of a weapon,I-Bond,1287,22.99%,Detainable - Public Safety
 Armed habitual criminal,C/D-Bond,909,88.86%,Detainable - Public Safety
 Violation of an order of protection,C/D-Bond,559,55.57%,Detainable - Public Safety
 Unlawful use of a weapon by a felon,C/D-Bond,442,89.47%,Detainable - Public Safety
 Violation of an order of protection,I-Bond,421,41.85%,Detainable - Public Safety
 First degree murder,No Bail,253,75.07%,Detainable - Public Safety
 Aggravated domestic battery,C/D-Bond,138,85.71%,Detainable - Public Safety
-Manufacture/delivery of a controlled substance,I-Bond,"1,618",75.40%,Detainable - Willful Flight
+Manufacture/delivery of a controlled substance,I-Bond,1618,75.40%,Detainable - Willful Flight
 Aggravated battery,C/D-Bond,616,1,Detainable - Willful Flight
 Manufacture/delivery of a controlled substance,C/D-Bond,498,0,Detainable - Willful Flight
 Manufacture/delivery of cannabis,I-Bond,376,73.87%,Detainable - Willful Flight
@@ -29,13 +29,13 @@ Possession of stolen motor vehicle,C/D-Bond,257,57.75%,Detainable - Willful Flig
 Burglary,I-Bond,257,44.70%,Detainable - Willful Flight
 Possession of a controlled substance,I-Bond,222,1,Detainable - Willful Flight
 Aggravated battery,I-Bond,204,24.06%,Detainable - Willful Flight
-Battery,I-Bond,"2,878",89.99%,Non-Detainable
-Driving on a suspended license,I-Bond,"1,727",77.10%,Non-Detainable
-Retail theft (Class 4 Felony or Misd.),I-Bond,"1,682",85.99%,Non-Detainable
-Retail theft,I-Bond,"1,682",85.99%,Non-Detainable
-Criminal damage to property,I-Bond,"1,391",84.56%,Non-Detainable
-Possession of a controlled substance (Class 4),I-Bond,"1,372",81.47%,Non-Detainable
-Possession of a controlled substance,I-Bond,"1,372",81.47%,Non-Detainable
+Battery,I-Bond,2878,89.99%,Non-Detainable
+Driving on a suspended license,I-Bond,1727,77.10%,Non-Detainable
+Retail theft (Class 4 Felony or Misd.),I-Bond,1682,85.99%,Non-Detainable
+Retail theft,I-Bond,1682,85.99%,Non-Detainable
+Criminal damage to property,I-Bond,1391,84.56%,Non-Detainable
+Possession of a controlled substance (Class 4),I-Bond,1372,81.47%,Non-Detainable
+Possession of a controlled substance,I-Bond,1372,81.47%,Non-Detainable
 Reckless conduct,I-Bond,857,95.33%,Non-Detainable
 Resisting or obstructing a peace officer,I-Bond,722,88.81%,Non-Detainable
 Driving on a suspended license,C/D-Bond,490,21.88%,Non-Detainable
