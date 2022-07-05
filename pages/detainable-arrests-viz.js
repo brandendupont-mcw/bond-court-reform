@@ -17,7 +17,7 @@ const FirstBar = dynamic(
   );
 
 const FirstPie = dynamic(
-  () => import('@/components/charts/pie'),
+  () => import('@/components/charts/ArrestPie'),
   { ssr: false }
 );
 

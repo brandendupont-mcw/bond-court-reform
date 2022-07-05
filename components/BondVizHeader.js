@@ -14,7 +14,7 @@ const vizHeader = () => {
             <div className=" max-w-5xl mb-6">
               <div>
               </div>
-              <h2 className="max-w-4xl mb-6 font-sans text-3xl font-bold  text-black sm:text-5xl sm:leading-none">
+              <h2 className="max-w-4xl mb-6 font-sans text-3xl font-bold  text-black sm:text-4xl sm:leading-none">
               <span className="text-dblue">Bond Decisions</span> in Cook County
               </h2>
               <p className="text-md max-w-4xl text-gray-700 md:text-md">
@@ -44,7 +44,7 @@ const vizHeader = () => {
               href="/blog/cook-bond"
               
             >
-             <div className="inline-flex items-center sm:text-md text-sm font-semibold transition-colors hover:underline duration-200 text-deep-purple-accent-400 hover:text-maroon cursor-pointer">Read the Full Report &#10141;</div> 
+             <div className="inline-flex items-center sm:text-md text-sm font-semibold transition-colors hover:underline duration-200 text-deep-purple-accent-400 hover:text-dblue cursor-pointer">Read the Full Report &#10141;</div> 
               </Link>
             </div>
 
