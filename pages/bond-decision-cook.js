@@ -110,7 +110,7 @@ export default function Home({ posts }) {
         (async () => {
           const users = await loadCSV('https://raw.githubusercontent.com/brandendupont-mcw/bond-court-reform/master/data/viz/cook_bond_stats.csv');
           const pie = await loadCSV('https://raw.githubusercontent.com/brandendupont-mcw/bond-court-reform/master/data/viz/bond_decision_pie.csv');
-          const ann = await loadCSV('https://raw.githubusercontent.com/brandendupont-mcw/bond-court-reform/master/data/viz/bail_decisions_top_10.csv');
+          const ann = await loadCSV('https://raw.githubusercontent.com/brandendupont-mcw/bond-court-reform/master/data/viz/bond_top_10_clean.csv');
 
 
           // eslint-disable-line
@@ -235,17 +235,17 @@ export default function Home({ posts }) {
           </div>
          
     
-      <div className='grid gap-10 grid-cols-2 '>
-      <span className=' h-[350px] '>
+      <div className='grid gap-10 grid-cols-1 '>
+      <span className=' h-[450px] '>
       
-      {enabled ? <FirstBar className="z-0" data={jsonAnn} keyArray={['Detainable - Public Safety %','Detainable - Willful Flight %','Non-detainable %']} valueFormatString={ " >-0.1~%"}
-           indexArray={"Year"} marginObject={{ top: 0, right: 0, bottom: 15, left: 0 }}
-           layoutVal={"vertical"}
-           colorArray={['#ffc413','#02aeff','#212121']}
-            /> :  <FirstBar className="z-0" data={jsonAnn} keyArray={['Detainable - Public Safety','Detainable - Willful Flight','Non-detainable']} valueFormatString={">-,"}
-            indexArray={"Year"} marginObject={{ top: 0, right: 0, bottom: 15, left:0 }}
-            layoutVal={"vertical"}
-            colorArray={['#ffc413','#02aeff','#212121']}
+      {enabled ? <FirstBar className="z-0" data={jsonAnn} keyArray={['C/D-Bond-Perc', 'I-Bond-Perc', 'No Bail-Perc']} valueFormatString={ " >-0.1~%"}
+           indexArray={"Offense"} marginObject={{ top: 0, right: 200, bottom: 15, left:250}}
+           layoutVal={"horizontal"}
+           colorArray={['#02aeff','#005ada','#212121']}
+            /> :  <FirstBar className="z-0" data={jsonAnn} keyArray={['C/D-Bond', 'I-Bond', 'No Bail']} valueFormatString={">-,"}
+            indexArray={"Offense"} marginObject={{ top: 0, right: 200, bottom: 15, left:250}}
+            layoutVal={"horizontal"}
+            colorArray={['#02aeff','#005ada','#212121']}
              /> }
 
 
@@ -258,7 +258,7 @@ export default function Home({ posts }) {
 
       </div>
 
-      <hr></hr>
+      <hr className='mt-6'></hr>
 
 
     </>
