@@ -1,0 +1,40 @@
+,offense_type,Offense,C/D-Bond,I-Bond,No Bail,C/D-Bond-Perc,I-Bond-Perc,No Bail-Perc
+0,All Offense Types,Aggravated unlawful use of a weapon,4232.0,1287.0,79.0,0.76,0.23,0.01
+1,All Offense Types,Battery,314.0,2878.0,6.0,0.1,0.9,0.0
+2,All Offense Types,Criminal damage to property,263.0,1401.0,2.0,0.16,0.84,0.0
+3,All Offense Types,Criminal trespass to real property,85.0,950.0,4.0,0.08,0.91,0.0
+4,All Offense Types,DUI,432.0,583.0,28.0,0.41,0.56,0.03
+5,All Offense Types,Domestic battery,3222.0,4291.0,38.0,0.43,0.57,0.01
+6,All Offense Types,Driving on a suspended license,257.0,877.0,12.0,0.22,0.77,0.01
+7,All Offense Types,Manufacture/delivery of a controlled substance,516.0,1683.0,33.0,0.23,0.75,0.01
+8,All Offense Types,Possession of a controlled substance,383.0,1594.0,32.0,0.19,0.79,0.02
+9,All Offense Types,Retail theft,394.0,1871.0,10.0,0.17,0.82,0.0
+10,Detainable - Public Safety,Aggravated domestic battery,138.0,16.0,7.0,0.86,0.1,0.04
+11,Detainable - Public Safety,Aggravated unlawful use of a weapon,4232.0,1287.0,79.0,0.76,0.23,0.01
+12,Detainable - Public Safety,Armed habitual criminal,909.0,17.0,97.0,0.89,0.02,0.09
+13,Detainable - Public Safety,Armed robbery,125.0,9.0,42.0,0.71,0.05,0.24
+14,Detainable - Public Safety,Attempt first degree murder,137.0,26.0,90.0,0.54,0.1,0.36
+15,Detainable - Public Safety,Domestic battery,3222.0,4291.0,38.0,0.43,0.57,0.01
+16,Detainable - Public Safety,First degree murder,79.0,5.0,253.0,0.23,0.01,0.75
+17,Detainable - Public Safety,Predatory criminal sexual assault of a child,129.0,1.0,38.0,0.77,0.01,0.23
+18,Detainable - Public Safety,Unlawful use of a weapon by a felon,442.0,45.0,7.0,0.89,0.09,0.01
+19,Detainable - Public Safety,Violation of an order of protection,559.0,421.0,26.0,0.56,0.42,0.03
+20,Detainable - Willful Flight,Aggravated battery,616.0,204.0,28.0,0.73,0.24,0.03
+21,Detainable - Willful Flight,Burglary,302.0,257.0,16.0,0.53,0.45,0.03
+22,Detainable - Willful Flight,DUI,174.0,101.0,14.0,0.6,0.35,0.05
+23,Detainable - Willful Flight,Escape,310.0,16.0,65.0,0.79,0.04,0.17
+24,Detainable - Willful Flight,Manufacture/delivery of a controlled substance,498.0,1618.0,30.0,0.23,0.75,0.01
+25,Detainable - Willful Flight,Manufacture/delivery of cannabis,131.0,376.0,2.0,0.26,0.74,0.0
+26,Detainable - Willful Flight,Possession of a controlled substance,96.0,222.0,7.0,0.3,0.68,0.02
+27,Detainable - Willful Flight,Possession of stolen motor vehicle,257.0,181.0,7.0,0.58,0.41,0.02
+28,Detainable - Willful Flight,Retail theft,123.0,189.0,7.0,0.39,0.59,0.02
+29,Detainable - Willful Flight,Theft,78.0,145.0,4.0,0.34,0.64,0.02
+30,Non-Detainable,Battery,314.0,2878.0,6.0,0.1,0.9,0.0
+31,Non-Detainable,Criminal damage to property,252.0,1391.0,2.0,0.15,0.85,0.0
+32,Non-Detainable,Driving on a suspended license,490.0,1727.0,23.0,0.22,0.77,0.01
+33,Non-Detainable,Possession of a controlled substance,287.0,1372.0,25.0,0.17,0.81,0.01
+34,Non-Detainable,Possession of a controlled substance (Class 4),287.0,1372.0,25.0,0.17,0.81,0.01
+35,Non-Detainable,Reckless conduct,42.0,857.0,0.0,0.05,0.95,0.0
+36,Non-Detainable,Resisting or obstructing a peace officer,88.0,722.0,3.0,0.11,0.89,0.0
+37,Non-Detainable,Retail theft,271.0,1682.0,3.0,0.14,0.86,0.0
+38,Non-Detainable,Retail theft (Class 4 Felony or Misd.),271.0,1682.0,3.0,0.14,0.86,0.0

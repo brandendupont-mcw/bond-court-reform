@@ -143,7 +143,7 @@ export default function Home({ posts }) {
     const newjsonPie = JSON.parse(JSON.stringify(pieData));
     const jsonAnn = JSON.parse(JSON.stringify(annData));
 
-    console.log(newjsonPie)
+    console.log(jsonAnn)
 
 
 
@@ -222,33 +222,40 @@ export default function Home({ posts }) {
 
 
 
-      <hr className=' mb-6 mt-4'></hr>
+      <div className=' mb-6 mt-10'></div>
                     
 
       <div className="mb-4 ">
-          <h1 className="text-2xl font-extrabold  tracking-tight text-gray-900 dark:text-gray-100 sm:leading-10 md:text-2xl md:leading-14">
-            Risk Level of Individuals Arrested
+          <h1 className="text-2xl font-extrabold  tracking-tight text-gray-900 dark:text-gray-100 sm:leading-10 md:text-2xl md:leading-14 mb-2">
+            Bail Decisions by Most Common Offense
           </h1>
-          <div className="text-md text-gray-700 max-w-sm  ">Percent of individuals arrested with a risk of new criminal activity or failure to appear</div>
+          <div className="text-md text-gray-700 max-w-sm  mb-2"> <span className='text-dblue'>{selected['name']}</span> <br></br>Top 10 most common offenses. Toggle between count and percent.</div>
+          <MyToggle enabled={enabled} setEnabled={setEnabled} />
           <hr className='max-w-sm mb-6 mt-4'></hr>
           </div>
          
     
       <div className='grid gap-10 grid-cols-2 '>
-      <span className=' h-[250px] '>
-      <div className="text-lg leading-7 text-gray-700 ml-[210px]">Risk of New Criminal Activity</div>
-            <FirstBar className="z-0" data={jsonTestAsync} keyArray={["NCA Risk"]}
-             indexArray={"Offense Type"} marginObject={{ top: 0, right: 0, bottom: 0, left: 300 }} colorArray={['#212121']} valueFormatString={ " >-0.1~%"}
-             layoutVal={"horizontal"} />
+      <span className=' h-[350px] '>
+      
+      {enabled ? <FirstBar className="z-0" data={jsonAnn} keyArray={['Detainable - Public Safety %','Detainable - Willful Flight %','Non-detainable %']} valueFormatString={ " >-0.1~%"}
+           indexArray={"Year"} marginObject={{ top: 0, right: 0, bottom: 15, left: 0 }}
+           layoutVal={"vertical"}
+           colorArray={['#ffc413','#02aeff','#212121']}
+            /> :  <FirstBar className="z-0" data={jsonAnn} keyArray={['Detainable - Public Safety','Detainable - Willful Flight','Non-detainable']} valueFormatString={">-,"}
+            indexArray={"Year"} marginObject={{ top: 0, right: 0, bottom: 15, left:0 }}
+            layoutVal={"vertical"}
+            colorArray={['#ffc413','#02aeff','#212121']}
+             /> }
+
+
+
+
             </span>
             
     
             
-      <span className=' w-[212px] h-[250px] z-index-0 mb-10'>
-      <div className="text-lg leading-7 text-gray-700">Risk of Failure to Appear</div>
-          <FirstBar className="z-0" data={jsonTestAsync} keyArray={["FTA Risk"]} indexArray={"Offense Type"} marginObject={{ top: 0, right: 0, bottom: 0, left: 10 }} valueFormatString={ " >-0.1~%"}
-           layoutVal={"horizontal"} colorArray={['#212121']}/>
-          </span>
+
       </div>
 
       <hr></hr>

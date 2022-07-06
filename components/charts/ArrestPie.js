@@ -53,7 +53,7 @@ const MyResponsiveArrestPie = ({ data,  /* see data tab */ }) => (
         colors={['#dae2e3','#02aeff','#ffc413','#005ada','#212121']}
         enableArcLabels={false}
         arcLinkLabel={d => `${d.id} (${d.formattedValue})`}
-        valueFormat=">-"
+        valueFormat=">-,"
         legends={[
             {
                 anchor: 'top-left',
