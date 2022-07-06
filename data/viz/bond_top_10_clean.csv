@@ -1,4 +1,4 @@
-,offense_type,Offense,C/D-Bond,I-Bond,No Bail,C/D-Bond-Perc,I-Bond-Perc,No Bail-Perc
+,offense_type,Offense,C/D-Bond,I-Bond,No Bail,C/D-Bond-Percent,I-Bond-Percent,No Bail-Percent
 3,All Offense Types,Criminal trespass to real property,85.0,950.0,4.0,0.08,0.91,0.0
 4,All Offense Types,DUI,432.0,583.0,28.0,0.41,0.56,0.03
 6,All Offense Types,Driving on a suspended license,257.0,877.0,12.0,0.22,0.77,0.01
