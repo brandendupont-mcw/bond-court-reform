@@ -17,7 +17,7 @@ const vizHeader = () => {
               <h2 className="max-w-4xl mb-6 font-sans text-3xl font-bold  text-black sm:text-4xl sm:leading-none">
               <span className="text-dblue">Bond Decisions</span> in Cook County
               </h2>
-              <p className="text-sm max-w-4xl text-gray-700 md:text-md">
+              <p className="text-sm max-w-4xl text-gray-700 md:text-sm">
               All individuals arrested for a felony, misdemeanor domestic battery, or violation of an order of protection in Cook County currently appear for a bond court hearing before a judge who sets bond. Bond court judges may impose one of three bond types.
               <ul className="list-disc p-2 ml-4 mt-2 mb-2">
                 <li>
@@ -26,7 +26,7 @@ const vizHeader = () => {
                <li> No bail in which defendants are denied bail and ordered to remain in jail.</li>
                 </ul>
               </p>
-              <p className="text-sm max-w-4xl mt-4 text-gray-700 md:text-sm mb-2">
+              <p className="text-sm max-w-4xl text-gray-700 md:text-sm mb-2">
               Under the PFA, two groups of individuals are initially detainable: 1) those eligible for detention based on a “public safety” standard, and 2) those eligible for detention based on a “willful flight” standard. 
               </p>
 
