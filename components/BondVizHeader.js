@@ -17,7 +17,7 @@ const vizHeader = () => {
               <h2 className="max-w-4xl mb-6 font-sans text-3xl font-bold  text-black sm:text-4xl sm:leading-none">
               <span className="text-dblue">Bond Decisions</span> in Cook County
               </h2>
-              <div className="text-sm">
+              <div className="text-sm text-gray-700 ">
               <p className="text-sm max-w-4xl text-gray-700 ">
               All individuals arrested for a felony, misdemeanor domestic battery, or violation of an order of protection in Cook County currently appear for a bond court hearing before a judge who sets bond. Bond court judges may impose one of three bond types.
               <ul className="list-disc text-sm p-2 ml-4 mt-2 mb-2">

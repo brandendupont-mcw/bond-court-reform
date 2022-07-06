@@ -241,9 +241,10 @@ export default function Home({ posts }) {
           </div>
          
     
-      <div className='grid gap-10 grid-cols-2 '>
-      <span className=' h-[250px] '>
-      <div className="text-lg leading-7 text-gray-700 ml-[210px]">Risk of New Criminal Activity</div>
+      <div className='grid  lg:gap-4 xl:gap-6 grid-cols-2 '>
+      <span className='h-[250px] '>
+      <div className="text-lg leading-7 text-gray-700 ml-[50px]">Risk of New Criminal Activity</div>
+
             <FirstBar className="z-0" data={jsonTestAsync} keyArray={["NCA Risk"]}
              indexArray={"Offense Type"} marginObject={{ top: 0, right: 0, bottom: 0, left: 300 }} colorArray={['#212121']} valueFormatString={ " >-0.1~%"}
              layoutVal={"horizontal"} />
