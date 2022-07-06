@@ -238,7 +238,7 @@ export default function Home({ posts }) {
       <div className='grid gap-10 grid-cols-1 '>
       <span className=' h-[450px] '>
       
-      {enabled ? <FirstBar className="z-0" data={jsonAnn} keyArray={['C/D-Bond-Perc', 'I-Bond-Perc', 'No Bail-Perc']} valueFormatString={ " >-0.1~%"}
+      {enabled ? <FirstBar className="z-0" data={jsonAnn} keyArray={['C/D-Bond-Percent', 'I-Bond-Percent', 'No Bail-Percent']} valueFormatString={ " >-0.1~%"}
            indexArray={"Offense"} marginObject={{ top: 0, right: 200, bottom: 15, left:250}}
            layoutVal={"horizontal"}
            colorArray={['#02aeff','#005ada','#212121']}
