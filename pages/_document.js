@@ -5,7 +5,7 @@ class MyDocument extends Document {
       <Html lang="en" className="scroll-smooth">
         <Head>
           
-          <link rel="shortcut icon" content="#ffffff" href="/static/favicons/favicon.ico" />
+          <link rel="shortcut icon" content="#ffffff" href="/pfa/static/favicons/favicon.ico" />
           <link rel="apple-touch-icon" sizes="76x76" href="/static/favicons/apple-touch-icon.png" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
             <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
