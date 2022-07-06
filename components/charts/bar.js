@@ -79,15 +79,7 @@ const MyResponsiveBar = ({ data, marginObject, keyArray, indexArray, layoutVal, 
         }}
         labelSkipWidth={12}
         labelSkipHeight={12}
-        labelTextColor={{
-            from: 'color',
-            modifiers: [
-                [
-                    'brighter',
-                    20
-                ]
-            ]
-        }}
+        labelTextColor={'white'}
         legends={[
             {
                 dataFrom: 'keys',

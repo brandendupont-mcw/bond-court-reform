@@ -26,7 +26,7 @@ const vizHeader = () => {
                <li> No bail in which defendants are denied bail and ordered to remain in jail.</li>
                 </ul>
               </p>
-              <p className="text-sm max-w-4xl mt-4 text-gray-700 md:text-md mb-2">
+              <p className="text-sm max-w-4xl mt-4 text-gray-700 md:text-sm mb-2">
               Under the PFA, two groups of individuals are initially detainable: 1) those eligible for detention based on a “public safety” standard, and 2) those eligible for detention based on a “willful flight” standard. 
               </p>
 

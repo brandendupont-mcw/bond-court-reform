@@ -32,7 +32,7 @@ const Highlight7 = () => {
 </svg>
                     <p className=" text-xl text-black font-semibold leading-5 mt-6">Data Tools</p>
                     <p className=" font-normal text-base leading-6 text-gray-600 my-4">Interactive visualizations to explore PFA changes</p>
-                    <Link href="/detainable-arrests-viz" className=" cursor-pointer text-base leading-4 font-medium text-gray-800 border-b-2 border-gray-800 hover:border-maroon hover:text-maroon ">View here</Link>
+                    <Link href="/data-tools" className=" cursor-pointer text-base leading-4 font-medium text-gray-800 border-b-2 border-gray-800 hover:border-maroon hover:text-maroon ">View here</Link>
                 </div>
 
                 {/* Personal Shopping Grid Card */}
