@@ -1,5 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
-import Script from 'next/script'
+
 
 class MyDocument extends Document {
   render() {
@@ -22,20 +22,6 @@ class MyDocument extends Document {
           <meta name="theme-color" content="#ffffff"></meta>
           <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
 
-          <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-GQGKXVWV2R"
-        />
-
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-GQGKXVWV2R', { page_path: window.location.pathname });
-            `,
-          }} />
 
         </Head>
         <body className="bg-white text-black antialiased dark:bg-gray-900 dark:text-white">

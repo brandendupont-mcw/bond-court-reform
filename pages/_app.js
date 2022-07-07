@@ -22,6 +22,21 @@ export default function App({ Component, pageProps }) {
     <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
       <Head>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
+        
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-GQGKXVWV2R"
+        />
+
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-GQGKXVWV2R', { page_path: window.location.pathname });
+            `,
+          }} />
 
       </Head>
       {isDevelopment && isSocket && <ClientReload />}
