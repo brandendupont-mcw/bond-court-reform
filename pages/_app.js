@@ -25,11 +25,15 @@ export default function App({ Component, pageProps }) {
       {isDevelopment && isSocket && <ClientReload />}
 
       <Script
+         id="first analytic"
         strategy="lazyOnload"
         src={`https://www.googletagmanager.com/gtag/js?id=G-GQGKXVWV2R`}
       />
 
-      <Script strategy="lazyOnload">
+ 
+      <Script
+      id="second analytic"
+      strategy="lazyOnload">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
