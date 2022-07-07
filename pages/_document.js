@@ -1,9 +1,13 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Script from 'next/script'
+
 class MyDocument extends Document {
   render() {
     return (
+      <>   
       <Html lang="en" className="scroll-smooth">
         <Head>
+          
           
           <link rel="icon" content="#ffffff" href="https://loyolaccj.org/favicon.ico" />
           <link rel="apple-touch-icon" sizes="76x76" href="https://loyolaccj.org/favicon.ico" />
@@ -17,12 +21,29 @@ class MyDocument extends Document {
           <meta name="msapplication-TileColor" content="#000000" />
           <meta name="theme-color" content="#ffffff"></meta>
           <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
+
+          <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-GQGKXVWV2R"
+        />
+
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-GQGKXVWV2R', { page_path: window.location.pathname });
+            `,
+          }} />
+
         </Head>
         <body className="bg-white text-black antialiased dark:bg-gray-900 dark:text-white">
           <Main />
           <NextScript />
         </body>
       </Html>
+      </>
     )
   }
 }
