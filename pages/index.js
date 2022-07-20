@@ -7,6 +7,7 @@ import formatDate from '@/lib/utils/formatDate'
 import Hero from '@/components/Hero'
 import Feature from '@/components/feature'
 
+
 import NewsletterForm from '@/components/NewsletterForm'
 
 const MAX_DISPLAY = 5
