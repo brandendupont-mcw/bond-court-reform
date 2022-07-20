@@ -53,7 +53,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
             <dl className="pt-6 pb-10 xl:border-b xl:border-gray-200 xl:pt-11 xl:dark:border-gray-700 ">
               <dt className="mb-2 text-sm font-bold uppercase tracking-wide text-black text-center sm:mb-0 mb-1 sm:text-left">Authors</dt>
               <dd>
-                <ul className="grid text-center grid-cols-1 sm:gap-1 gap-2 sm:space-x-12 xl:block xl:space-x-0 xl:space-y-2 sm:text-left">
+                <ul className="grid text-center grid-cols-1 sm:gap-1 gap-2 lg:space-x-12 xl:block xl:space-x-0 xl:space-y-2 sm:text-left">
                   
                   {authorDetails.map((author) => (
                     <li className="sm:space-x-1" key={author.name}>
