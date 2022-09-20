@@ -38,7 +38,7 @@ module.exports = {
       colors: {
         primary: colors.blue,
         gray: colors.neutral,
-        maroon: '#b32347',
+        maroon: '#02AEFF',
         yellow: '#ffc413',
         dblue: '#005ada',
         lblue: '#02aeff',
