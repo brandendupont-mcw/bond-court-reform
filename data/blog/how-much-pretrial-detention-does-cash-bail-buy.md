@@ -4,7 +4,7 @@ date: '2022-10-06'
 tags: ['Bond', 'Pretrial', 'Statewide']
 draft: false
 summary: 'Under the current cash bail system, most people - even people charged with serious crimes - do not await trial in jail.'
-authors: ['default','patrick', 'dave', 'branden']
+authors: ['default','patrick', 'dave', 'branden', 'amanda']
 ---
 
 import DataWrapChart from '@/components/DataWrap.js';
