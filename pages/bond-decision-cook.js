@@ -157,7 +157,7 @@ export default function Home({ posts }) {
 
   return (
     <>
-      <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
+      <PageSEO       title={"Bond Decisions in Cook County -- Viz Tool."} description={"This tool presents data comparing existing Cook bond decisions with the new PFA detainable groups. For each PFA group it provides data on avoided bail costs and avoided average bond amount. Comparison data on existing 2021 Cook bond decisions and common offense level is provided."} /> 
       <VizHeader />
 
       <div className='p-4'></div>

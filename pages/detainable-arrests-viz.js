@@ -186,7 +186,7 @@ export default function Home({ posts }) {
 
   return (
     <>
-      <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
+      <PageSEO title={"The Volume and Characteristics of Arrests Eligible for Detention -- Viz Tool."} description={"This tool presents data on the distribution of detainable arrests. It breaks down their offense, failure to appear (FTA), and risk level."} />
       <VizHeader />
 
       
