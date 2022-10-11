@@ -116,6 +116,7 @@ export default function Home({ posts }) {
     const [pieData, setPieData] = useState(lastTest1);
 
     const [annData, setAnnData] = useState(lastTest1);
+    const [barRiskData, setBarRiskData] = useState(lastTest1);
 
     const [selected, setSelected] = useState(people[0]);
 
@@ -134,18 +135,24 @@ export default function Home({ posts }) {
           const users = await loadCSV('https://raw.githubusercontent.com/brandendupont-mcw/bond-court-reform/master/data/viz/risk.csv');
           const pie = await loadCSV('https://raw.githubusercontent.com/brandendupont-mcw/bond-court-reform/master/data/viz/pie.csv');
           const ann = await loadCSV('https://raw.githubusercontent.com/brandendupont-mcw/bond-court-reform/master/data/viz/ann.csv');
+          const barRisk = await loadCSV('https://raw.githubusercontent.com/brandendupont-mcw/bond-court-reform/master/data/viz/barRisk.csv');
 
+
+    
           
           // eslint-disable-line
           const testData = users.params({ threshold: selected['id'] }).filter(d => d.Circuit === threshold ); 
           const filterPie = pie.params({ threshold: selected['id'] }).filter(d => d.Circuit === threshold ); 
           const filterAnn = ann.params({ threshold: selected['id'] }).filter(d => d.Circuit === threshold ); 
+          const barRiskFilter = barRisk.params({ threshold: selected['id'] }).filter(d => d.Circuit === threshold );
           // risk data
           
 
           setRiskData(testData.objects());
           setPieData(filterPie.objects());
           setAnnData(filterAnn.objects());
+
+          setBarRiskData(barRiskFilter.objects());
 
         })();
       
@@ -165,7 +172,9 @@ export default function Home({ posts }) {
     const jsonPie = JSON.parse(JSON.stringify(pieData));
     const jsonAnn = JSON.parse(JSON.stringify(annData));
 
-    console.log(jsonPie)
+    const barRiskFinal = JSON.parse(JSON.stringify(barRiskData));
+
+    //console.log(jsonPie)
 
 
   const percVal = ['Detainable - Public Safety %','Detainable - Willful Flight %','Non-detainable %']
@@ -245,7 +254,7 @@ export default function Home({ posts }) {
       <span className='h-[250px] '>
       <div className="text-lg leading-7 text-gray-700 ml-[50px]">Risk of New Criminal Activity</div>
 
-            <FirstBar className="z-0" data={jsonTestAsync} keyArray={["NCA Risk"]}
+            <FirstBar className="z-0" data={ barRiskFinal } keyArray={["NCA Risk"]}
              indexArray={"Offense_Type"} marginObject={{ top: 0, right: 0, bottom: 0, left: 300 }} colorArray={['#212121']} valueFormatString={ " >-0.1~%"}
              layoutVal={"horizontal"} />
             </span>
@@ -254,7 +263,7 @@ export default function Home({ posts }) {
             
       <span className=' w-[212px] h-[250px] z-index-0 mb-10'>
       <div className="text-lg leading-7 text-gray-700">Risk of Failure to Appear</div>
-          <FirstBar className="z-0" data={jsonTestAsync} keyArray={["FTA Risk"]} indexArray={"Offense_Type"} marginObject={{ top: 0, right: 0, bottom: 0, left: 10 }} valueFormatString={ " >-0.1~%"}
+          <FirstBar className="z-0" data={ barRiskFinal } keyArray={["FTA Risk"]} indexArray={"Offense_Type"} marginObject={{ top: 0, right: 0, bottom: 0, left: 10 }} valueFormatString={ " >-0.1~%"}
            layoutVal={"horizontal"} colorArray={['#212121']}/>
           </span>
       </div>
