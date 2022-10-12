@@ -14,7 +14,8 @@ Center for Criminal Justice Research</div>
           <div>{` • `}</div>
           <div>{`© ${new Date().getFullYear()}`}</div>
           <div>{` • `}</div>
-          <Link href="/">Bond Court Tracker</Link>
+          <Link href="/">Tracking the
+Pretrial Fairness Act in Illinois</Link>
         </div>
         <div className="mb-8 text-sm text-gray-500 dark:text-gray-400">
         </div>
