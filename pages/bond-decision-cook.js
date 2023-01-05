@@ -7,7 +7,6 @@ import { loadCSV} from 'arquero';
 import _ from "lodash";
 import React, { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
-import _ from "lodash";
 import Select from '@/components/BondSelect'  ;
 import VizHeader from '@/components/BondVizHeader.js'
 import MyToggle from '@/components/toggle';
