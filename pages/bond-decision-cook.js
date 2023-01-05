@@ -3,7 +3,8 @@ import { PageSEO } from '@/components/SEO'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
-import { aq, op, table, loadCSV, FileAttachment } from 'arquero';
+import { loadCSV} from 'arquero';
+import _ from "lodash";
 import React, { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import _ from "lodash";
