@@ -9,7 +9,7 @@ const StoryHeader = () => {
 
 
     return (
-      <div className=" bg-gray-50  p-10 ">
+      <div className=" pt-10 ml-2">
         <div className="grid gap-5 row-gap-1 lg:grid-cols-1">
           <div className="">
             <div className=" max-w-4xl mb-6">

@@ -13,6 +13,7 @@ const Highlight7 = () => {
     </svg>
     
     return (
+        <div className="">
         <div style={{"backgroundImage": `url(https://raw.githubusercontent.com/brandendupont-mcw/jil_report/143d01c42cae48eacd5e473add0f84d615c27d47/public/static/images/squares.svg)`}} className="2xl:container 2xl:mx-auto lg:px-20 md:py-20 md:px-6 py-12 px-4 bg-hero mb-24 ">
             <div className=" grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:gap-20 gap-6 ">
 
@@ -37,6 +38,7 @@ const Highlight7 = () => {
 
                 {/* Personal Shopping Grid Card */}
             </div>
+        </div>
         </div>
     );
 };

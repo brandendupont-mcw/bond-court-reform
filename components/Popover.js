@@ -1,7 +1,7 @@
 import { Popover, Transition } from '@headlessui/react'
 import { Fragment } from 'react'
 
-function PopOver({number,popoverText}) {
+function PopOver({number,children}) {
     return (
       <span ariaLabel='click me' className="inline-flex items-baseline">
         <Popover className="relative">
@@ -13,7 +13,7 @@ function PopOver({number,popoverText}) {
               >
               
               <span className="inline-block  mr-1 text-sm font-bold tracking-wider text-maroon">
-                {number}
+              {number}
                 </span>
               </Popover.Button>
               <Transition
@@ -32,7 +32,7 @@ function PopOver({number,popoverText}) {
                         <span className="flex items-center">
                         </span>
                         <span className="block text-sm text-black">
-                        {popoverText}
+                        {children}
                         </span>
             
                     </div>

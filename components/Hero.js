@@ -8,7 +8,7 @@ const Statistic = () => {
 
 
     return (
-      <div className=" bg-gray-50  p-10 mb-32 ">
+      <div className=" bg-white   p-10 mb-32 ">
         <div className="grid gap-5 row-gap-2 lg:grid-cols-2">
           <div className="xl:ml-14 sm:ml-2 flex flex-col justify-center">
             <div className=" max-w-xl mb-6">
