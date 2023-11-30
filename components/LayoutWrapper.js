@@ -32,7 +32,7 @@ const LayoutWrapper = ({ children }) => {
         <header className="flex items-center justify-between xl:ml-10  ml-10 mr-10  sm:mb-0 ">
           
           <div>
-            <Link href="/" aria-label={siteMetadata.headerTitle}>
+            <Link href="https://loyolaccj.org/" aria-label={siteMetadata.headerTitle}>
               <div className="flex items-center justify-between">
                 
                 <div >
